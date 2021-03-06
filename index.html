@@ -91,7 +91,7 @@ function getCountryCards(data){
     function checkWeather(country){
         lat=country.latlng[0];
         lng=country.latlng[1];
-        link="http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lng+"&appid=fe282060c2b9014b5585f2e77b670fac";
+        link="https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lng+"&appid=fe282060c2b9014b5585f2e77b670fac";
         var response=fetch(link);
         response.then(function(res){
             return res.json();
